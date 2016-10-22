@@ -1,0 +1,5 @@
+.group{
+    flex-direction: row;
+    align-items: center;
+    margin-top: 80rpx;
+}

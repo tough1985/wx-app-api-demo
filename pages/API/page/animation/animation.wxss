@@ -1,0 +1,12 @@
+
+.animation-wrap {
+    flex-wrap: 1;
+    display: block;
+    margin-bottom: 100rpx;
+}
+
+.animation-element{
+    width: 200rpx;
+    height: 200rpx;
+    background-color: #c6aeff;
+}

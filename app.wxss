@@ -1,0 +1,158 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.page {
+  flex: 1;
+  min-height: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  background-color: #FBF9FE;
+}
+
+.page_head {
+  padding: 80rpx;
+}
+
+.page_title {
+  display: block;
+  font-size: 20px;
+}
+
+.page_desc {
+  margin-top: 20rpx;
+  display: block;
+  font-size: 14px;
+  color: #888888;
+}
+
+.page_bd{
+    padding: 20rpx;
+}
+.page-body-wrapper {
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.page-input {
+    margin-top: 30rpx;
+    border: 1px solid #888888;
+    border-radius: 10rpx;
+    padding: 10rpx;
+}
+
+.index{
+    background-color: #FBF9FE;
+    font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+    flex: 1;
+    min-height: 100%;
+    font-size: 16px;
+}
+
+.body{
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    overflow: hidden;
+}
+
+.widgets_item{
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 2rpx;
+    cursor: pointer;
+}
+
+.widgets_info{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.widgets_info-show{
+    opacity: 0.4;
+}
+
+.widgets_info-name{
+    flex:1;
+}
+.widgets_info-img{
+    width: 30px;
+    height: 30px;
+}
+.widgets_list{
+    display: none;
+}
+.widgets_list-show{
+    display: block;
+}
+
+.widget{
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.widget_arrow{
+    position:absolute;
+    top: 14px;
+    right: 22px;
+    width: 8px;
+    height: 16px;
+}
+.widget_line{
+    content: " ";
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    right: 20px;
+    height: 1rpx;
+    background: #DFDFDF;
+}
+
+.section{
+    margin-bottom: 80rpx;
+}
+.section_title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.bc_green{
+    background-color: #09BB07;
+}
+.bc_red{
+    background-color: #F76260;
+}
+.bc_blue{
+    background-color: #10AEFF;
+}
+.bc_yellow{
+    background-color: #FFBE00;
+}
+.bc_gray{
+    background-color: #C9C9C9;
+}
+
+.btn-area{
+    padding: 0;
+    margin-top: 40rpx;
+}
+.btn-area button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

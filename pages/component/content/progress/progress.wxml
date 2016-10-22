@@ -1,0 +1,13 @@
+<import src="../../../templates/page-header.wxml"/>
+
+<view class="page">
+    <template is="pageHeadTemp" data="{{...page}}"/>
+
+    <view class="page_bd">
+        <progress percent="20" show-info="true"/>
+        <progress percent="40" stroke-width="12"/>
+        <progress percent="60" color="pink"/>
+        <progress percent="80" active="true"/>
+    </view>
+    
+</view>

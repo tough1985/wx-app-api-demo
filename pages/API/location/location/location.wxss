@@ -1,0 +1,13 @@
+.location-text{
+    margin: 10rpx;
+    font-size: 50rpx;
+}
+
+.location-content {
+    margin-top: 100rpx;
+    margin-bottom: 100rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,71 @@
+<import src="../../../templates/page-header.wxml"/>
+
+<view class="page">
+    <template is="pageHeadTemp" data="{{...page}}"/>
+
+    <view class="page_bd">
+        <view class="page-body-wrapper">
+            
+            <block wx:if="{{!recording && !hasRecord}}">
+                <view class="time">
+                    <text class="time-big">{{formatedRecordTime}}</text>
+                </view>
+                <view class="record-buttons">
+                    <view class="record-button"></view>
+                    <view class="record-button" bindtap="startRecord">
+                        <image src="/resource/record.png" />
+                    </view>
+                    <view class="record-button"></view>
+                </view>
+            </block>
+
+            <block wx:if="{{recording}}">
+                <view class="time">
+                    <text class="time-big">{{formatedRecordTime}}</text>
+                </view>
+                <view class="record-buttons">
+                    <view class="record-button"></view>
+                    <view class="record-button" bindtap="stopRecord">
+                        <view class="button-stop-record"></view>
+                    </view>
+                    <view class="record-button"></view>
+                </view>
+            </block>
+
+            <block wx:if="{{hasRecord && !playing}}">
+                <view class="time">
+                    <text class="time-big">{{formatedPlayTime}}</text>
+                    <text class="time-small">{{formatedRecordTime}}</text>
+                </view>
+                <view class="record-buttons">
+                    <view class="record-button"></view>
+                    <view class="record-button" bindtap="playVoice">
+                        <image src="/resource/play.png" />
+                    </view>
+                    <view class="record-button" bindtap="clear">
+                        <image src="/resource/trash.png" />
+                    </view>
+                </view>
+            </block>
+
+            <block wx:if="{{hasRecord && playing}}">
+                <view class="time">
+                    <text class="time-big">{{formatedPlayTime}}</text>
+                    <text class="time-small">{{formatedRecordTime}}</text>
+                </view>
+                <view class="record-buttons">
+                    <view class="record-button" bindtap="stopVoice">
+                        <image src="/resource/stop.png" />
+                    </view>
+                    <view class="record-button" bindtap="pauseVoice">
+                        <image src="/resource/pause.png" />
+                    </view>
+                    <view class="record-button" bindtap="clear">
+                        <image src="/resource/trash.png" />
+                    </view>
+                </view>
+            </block>
+
+        </view>
+    </view>
+</view>

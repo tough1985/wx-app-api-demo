@@ -1,0 +1,19 @@
+form{
+    width: 100%;
+}
+/*.storage-input {
+    margin-top: 30rpx;
+    border: 1px solid #888888;
+    border-radius: 10rpx;
+    padding: 10rpx;
+}*/
+.btn-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.page-body-wrapper{
+    width: 100%;
+}

@@ -1,0 +1,7 @@
+button{
+    margin-top: 40rpx;
+}
+
+audio{
+    width: 100%;
+}

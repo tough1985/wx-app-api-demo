@@ -1,0 +1,87 @@
+{
+  "pages":[
+    "pages/component/index/index",
+    "pages/API/index/index",
+
+    "pages/component/view/view/view",
+    "pages/component/view/scroll-view/scroll-view",
+    "pages/component/view/swiper/swiper",
+
+    "pages/component/content/icon/icon",
+    "pages/component/content/text/text",
+    "pages/component/content/progress/progress",
+    
+    "pages/component/form/button/button",
+    "pages/component/form/checkbox/checkbox",
+    "pages/component/form/form/form",
+    "pages/component/form/input/input",
+    "pages/component/form/label/label",
+    "pages/component/form/picker/picker",
+    "pages/component/form/radio/radio",
+    "pages/component/form/slider/slider",
+    "pages/component/form/switch/switch",
+
+    "pages/component/interact/action-sheet/action-sheet",
+    "pages/component/interact/loading/loading",
+    "pages/component/interact/modal/modal",
+    "pages/component/interact/toast/toast",
+
+    "pages/component/nav/navigator/navigator",
+    "pages/component/nav/navigate/navigate",
+    "pages/component/nav/redirect/redirect",
+
+    "pages/component/media/audio/audio",
+    "pages/component/media/image/image",
+    "pages/component/media/video/video",
+
+    "pages/API/media/image/image",
+    "pages/API/media/record/record",
+
+    "pages/API/storage/storage/storage",
+
+    "pages/API/location/location/location",
+
+    "pages/API/equipment/networkType/networkType",
+    "pages/API/equipment/systemInfo/systemInfo",
+    "pages/API/equipment/accelerometerChange/accelerometerChange",
+    "pages/API/equipment/compassChange/compassChange",
+
+    "pages/API/page/navigationBar/navigationBar",
+    "pages/API/page/navigator/navigator",
+    "pages/API/page/navigate/navigate",
+    "pages/API/page/redirect/redirect",
+    "pages/API/page/animation/animation",
+    "pages/API/page/pullDownRefresh/pullDownRefresh",
+
+    "pages/API/open/login/login",
+    "pages/API/open/userinfo/userinfo"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list":[
+      {
+        "pagePath": "pages/component/index/index",
+        "iconPath": "resource/wechat.png",
+        "selectedIconPath": "resource/wechatHL.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/API/index/index",
+        "iconPath": "resource/wechat.png",
+        "selectedIconPath": "resource/wechatHL.png",
+        "text": "接口"
+      }
+    ]
+  },
+  "debug": true
+}

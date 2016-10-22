@@ -1,0 +1,20 @@
+<template name="widgetsItemTemp">
+    
+    <view class="widgets_item">
+        <view id="{{widgetTypeName}}" class="widgets_info {{viewShow ? 'widgets_info-show' : ''}}" bindtap="widgetsToggle">
+            <text class="widgets_info-name">{{widgetTypeTitle}}</text>
+            <image class="widgets_info-img" background-size="cover" src="../resources/kind/{{widgetTypeName}}.png"/>
+        </view>
+        <view class="widgets_list {{viewShow ? 'widgets_list-show' : ''}}">
+            <block wx:for="{{widgetItems}}" wx:for-item="widgetItem">
+                <navigator url="../{{widgetTypeName}}/{{widgetItem}}/{{widgetItem}}" class="widget">
+                    <!--<text class="widget_name">{{widgetItem}}</text>-->
+                    <text class="widget_name">{{widgetItemNames[index] ? widgetItemNames[index] : widgetItem}}</text>
+                    <image class="widget_arrow" background-size="cover" src="../../../resource/arrow.png"/>
+                    <view class="widget_line"></view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+    
+</template>

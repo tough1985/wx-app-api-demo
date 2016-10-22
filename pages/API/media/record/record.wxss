@@ -1,0 +1,39 @@
+.page-body-wrapper {
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200rpx;
+}
+.time-big{
+    font-size: 60rpx;
+    margin: 20rpx;
+}
+
+.record-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.record-button {
+    width: 250rpx;
+    text-align: center;
+    margin: 25rpx;
+}
+
+.record-button image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.button-stop-record {
+  width: 110rpx;
+  height: 110rpx;
+  border: 20rpx solid #fff;
+  background-color: #f55c23;
+  border-radius: 130rpx;
+  margin: 0 auto;
+}

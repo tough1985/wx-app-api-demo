@@ -1,0 +1,6 @@
+<template name="pageHeadTemp">
+    <view class="page_head">
+        <text class="page_title">{{title}}</text>
+        <text class="page_desc">{{desc}}</text>
+    </view>
+</template>

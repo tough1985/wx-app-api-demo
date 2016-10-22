@@ -1,0 +1,13 @@
+<import src="../../templates/page-header.wxml"/>
+<import src="../../templates/widgets-item.wxml"/>
+<view class="index">
+    <template is="pageHeadTemp" data="{{...page}}"/>
+
+    <view class="body">
+        <view class="widgets">
+            <block wx:for="{{widgetTypes}}" wx:for-item="widgetType">
+                <template is="widgetsItemTemp" data="{{...widgetType}}"/>
+            </block>
+        </view>
+    </view>
+</view>

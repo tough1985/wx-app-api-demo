@@ -1,0 +1,12 @@
+<import src="../../../templates/page-header.wxml"/>
+
+<view class="page">
+    <template is="pageHeadTemp" data="{{...page}}"/>
+
+    <view class="page_bd">
+        <view class="btn-area">
+            <navigator url="../navigate/navigate?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+            <navigator url="../redirect/redirect?title=redirect" redirect hover-class="other-navigator-hover">在当前页打开</navigator>
+        </view>
+    </view>
+</view>

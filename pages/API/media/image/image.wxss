@@ -1,0 +1,15 @@
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20rpx;
+}
+
+.image-list-item{
+    width: 150rpx;
+    height: 150rpx;
+    margin: 10rpx;
+}
+
+.image-list-plus {
+    border: 1px solid #999;
+}

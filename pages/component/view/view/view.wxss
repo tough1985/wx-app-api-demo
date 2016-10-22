@@ -1,0 +1,56 @@
+.flex-wrp{
+    height: 100px;
+    display:flex;
+    background-color: #FFFFFF;
+}
+.flex-item{
+    display: flex;
+    width: 200rpx;
+    height: 200rpx;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.row{
+    flex-direction:row;
+}
+
+.column{
+    height:600rpx;
+    flex-direction:column;
+}
+
+.flex-start{
+    flex-direction:row;
+    justify-content: flex-start;
+}
+.flex-end{
+    flex-direction:row;
+    justify-content: flex-end;
+}
+.flex-center{
+    flex-direction:row;
+    justify-content: flex-center;
+}
+.space-between{
+    flex-direction:row;
+    justify-content: flex-center;
+}
+.fspace-around{
+    flex-direction:row;
+    justify-content: flex-center;
+}
+.align-flex-end{
+    height:400rpx;
+    flex-direction:row;
+    justify-content:center;
+    align-items: flex-end;
+}
+
+.align-center{
+    height:400rpx;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}

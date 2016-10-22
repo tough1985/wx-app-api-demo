@@ -1,0 +1,53 @@
+.label-1, .label-2{
+    margin-bottom: 15px;
+}
+
+.label-1_text, .label-2_text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.label-1_icon{
+    position:relative;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background: #fcfff4;
+}
+
+.label-1_icon-checked{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background: #1aad19;
+}
+
+.label-2_icon{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    background: #fcfff4;
+    border-radius: 50%;
+}
+
+.label-2_icon-checked{
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    background: #1aad19;
+    border-radius: 50%;
+}
+
+.label-4_text{
+    text-align: center;
+    margin-top: 15px;
+}

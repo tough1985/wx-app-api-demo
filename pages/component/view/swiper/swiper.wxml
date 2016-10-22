@@ -1,0 +1,24 @@
+<import src="../../../templates/page-header.wxml"/>
+
+<view class="page">
+    <template is="pageHeadTemp" data="{{...page}}"/>
+
+    <view class="page_bd">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" style="width:100%;" height="150" mode="aspectFit"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="btn-area">
+            <button bindtap="changeIndicatorDots">indicator-dots</button>
+            <button bindtap="changeAutoplay">autoplay</button>
+        </view>
+        
+        <slider bindchange="intervalChange" value="{{duration}}" min="1000" max="10000" show-value />
+        <view class="section_title">interval</view>
+        <slider bindchange="durationChange" value="{{duration}}" min="500" max="2000" show-value />
+        <view class="section_title">duration</view>
+    </view>
+</view>

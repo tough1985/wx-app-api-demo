@@ -1,0 +1,21 @@
+<import src="../../../templates/page-header.wxml"/>
+<template name="flexItem">
+    <view class="section">
+        <view class="section_title">{{title}}</view>
+        <view class="flex-wrp {{className}}">
+            <view class="flex-item bc_green">1</view>
+            <view class="flex-item bc_red">2</view>
+            <view class="flex-item bc_blue">3</view>
+        </view>
+    </view>
+</template>
+
+<view class="page">
+    <template is="pageHeadTemp" data="{{...page}}"/>
+
+    <view class="page_bd">
+        <block wx:for="{{items}}">
+            <template is="flexItem" data="{{...item}}"/>
+        </block>
+    </view>
+</view>

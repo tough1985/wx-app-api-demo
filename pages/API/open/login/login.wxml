@@ -1,0 +1,14 @@
+<import src="../../../templates/page-header.wxml"/>
+
+<view class="page">
+    <template is="pageHeadTemp" data="{{...page}}"/>
+
+    <view class="page_bd">
+        <view class="page-body-wrapper">
+            <text class="info">{{info}}</text>
+        </view>
+        <view class="btn-area">
+            <button type="primary"  plain="ture" bindtap="login">获取CODE</button>
+        </view>
+    </view>
+</view>

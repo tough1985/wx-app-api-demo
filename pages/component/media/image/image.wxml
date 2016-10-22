@@ -1,0 +1,14 @@
+<import src="../../../templates/page-header.wxml"/>
+
+<view class="page">
+    <template is="pageHeadTemp" data="{{...page}}"/>
+
+    <view class="page_bd">
+       <view class="section section_gap" wx:for="{{array}}">
+            <view class="section_title">{{item.text}}</view>
+            <view class="section_ctn">
+                <image src="{{src}}" mode="{{item.mode}}" style="width: 200px; height: 200px; background-color: #eeeeee;"/>
+            </view>
+       </view>
+    </view>
+</view>
